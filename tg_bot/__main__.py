@@ -373,7 +373,7 @@ def donate(bot: Bot, update: Update):
         try:
             bot.send_message(user.id, DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
-            update.effective_message.reply_text("I've PM'ed you about donating to my creator!")
+            update.effective_message.reply_text("I've PM'ed you about donating to my creator !")
         except Unauthorized:
             update.effective_message.reply_text("Contact me in PM first to get donation information.")
 
